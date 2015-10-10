@@ -80,13 +80,13 @@
 		6288984B1BC8E9F300D9A0E9 /* ScoutReport */ = {
 			isa = PBXGroup;
 			children = (
+				628898731BC8F77C00D9A0E9 /* Models */,
 				6288984C1BC8E9F300D9A0E9 /* AppDelegate.swift */,
 				6288984E1BC8E9F300D9A0E9 /* ViewController.swift */,
 				628898501BC8E9F300D9A0E9 /* Main.storyboard */,
 				628898531BC8E9F300D9A0E9 /* Assets.xcassets */,
 				628898551BC8E9F300D9A0E9 /* LaunchScreen.storyboard */,
 				628898581BC8E9F300D9A0E9 /* Info.plist */,
-				628898711BC8F64700D9A0E9 /* Suspect.swift */,
 			);
 			path = ScoutReport;
 			sourceTree = "<group>";
@@ -94,11 +94,27 @@
 		628898601BC8E9F300D9A0E9 /* ScoutReportTests */ = {
 			isa = PBXGroup;
 			children = (
+				628898741BC8F78E00D9A0E9 /* Models */,
 				628898631BC8E9F300D9A0E9 /* Info.plist */,
 				6288986C1BC8F50D00D9A0E9 /* ScoutReportTests-Bridging-Header.h */,
-				6288986F1BC8F53400D9A0E9 /* SuspectTest.swift */,
 			);
 			path = ScoutReportTests;
+			sourceTree = "<group>";
+		};
+		628898731BC8F77C00D9A0E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				628898711BC8F64700D9A0E9 /* Suspect.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		628898741BC8F78E00D9A0E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6288986F1BC8F53400D9A0E9 /* SuspectTest.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
