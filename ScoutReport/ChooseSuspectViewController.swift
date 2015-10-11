@@ -1,6 +1,6 @@
 import UIKit
 
-class ChooseSuspectController: UIViewController, UITextFieldDelegate {
+class ChooseSuspectViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var instagramUsernameField: UITextField!
     var pusher: PusherType = Pusher()
 

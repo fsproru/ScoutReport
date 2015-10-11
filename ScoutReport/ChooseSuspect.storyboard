@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Choose Suspect Controller-->
+        <!--Choose Suspect View Controller-->
         <scene sceneID="cRq-tR-j67">
             <objects>
-                <viewController storyboardIdentifier="chooseSuspectController" id="B2c-fL-8aB" customClass="ChooseSuspectController" customModule="ScoutReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chooseSuspectViewController" id="B2c-fL-8aB" customClass="ChooseSuspectViewController" customModule="ScoutReport" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cZO-ZP-XZD"/>
                         <viewControllerLayoutGuide type="bottom" id="vBw-yO-938"/>

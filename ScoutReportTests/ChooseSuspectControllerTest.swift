@@ -1,15 +1,18 @@
 import XCTest
 @testable import ScoutReport
 
-class ChooseSuspectControllerTest: XCTestCase {
+class ChooseSuspectViewControllerTest: XCTestCase {
+    var controller: ChooseSuspectViewController!
+    let pusher = FakePusher()
+
+    override func setUp() {
+        super.setUp()
+        controller = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseSuspectViewController") as! ChooseSuspectViewController
+        controller.pusher = pusher
+        setupNavigationControllerViewStack(viewController: controller)
+    }
+
     func testChoosingInstagram() {
-        let window                = UIWindow()
-        let navigationController  = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseSuspectNavigationController") as! UINavigationController
-        let controller            = navigationController.topViewController! as! ChooseSuspectController
-        let pusher                = FakePusher()
-        controller.pusher         = pusher
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
         controller.loadViewIfNeeded()
         controller.instagramUsernameField.text = "@spiderman"
 

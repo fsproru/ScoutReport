@@ -11,6 +11,7 @@
 		62816C1D1BC9EDB600946F50 /* ChooseYoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C1C1BC9EDB600946F50 /* ChooseYoutubeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		62816C201BC9F13900946F50 /* Pusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C1F1BC9F13900946F50 /* Pusher.swift */; settings = {ASSET_TAGS = (); }; };
 		62816C251BC9F25E00946F50 /* FakePusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C241BC9F25E00946F50 /* FakePusher.swift */; settings = {ASSET_TAGS = (); }; };
+		62816C281BC9F85500946F50 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C271BC9F85500946F50 /* XCTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 		6288984D1BC8E9F300D9A0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288984C1BC8E9F300D9A0E9 /* AppDelegate.swift */; };
 		6288984F1BC8E9F300D9A0E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288984E1BC8E9F300D9A0E9 /* ViewController.swift */; };
 		628898521BC8E9F300D9A0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628898501BC8E9F300D9A0E9 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		62816C1C1BC9EDB600946F50 /* ChooseYoutubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseYoutubeViewController.swift; sourceTree = "<group>"; };
 		62816C1F1BC9F13900946F50 /* Pusher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pusher.swift; sourceTree = "<group>"; };
 		62816C241BC9F25E00946F50 /* FakePusher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePusher.swift; sourceTree = "<group>"; };
+		62816C271BC9F85500946F50 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		628898491BC8E9F300D9A0E9 /* ScoutReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoutReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6288984C1BC8E9F300D9A0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6288984E1BC8E9F300D9A0E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		62816C261BC9F84A00946F50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				62816C271BC9F85500946F50 /* XCTestCase.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		628898401BC8E9F200D9A0E9 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		628898601BC8E9F300D9A0E9 /* ScoutReportTests */ = {
 			isa = PBXGroup;
 			children = (
+				62816C261BC9F84A00946F50 /* Extensions */,
 				62816C211BC9F1B900946F50 /* Helpers */,
 				628898781BC98C3900D9A0E9 /* ViewControllers */,
 				628898741BC8F78E00D9A0E9 /* Models */,
@@ -306,6 +317,7 @@
 			files = (
 				628898761BC8F8F600D9A0E9 /* ChooseSuspectControllerTest.swift in Sources */,
 				628898701BC8F53400D9A0E9 /* SuspectTest.swift in Sources */,
+				62816C281BC9F85500946F50 /* XCTestCase.swift in Sources */,
 				62816C251BC9F25E00946F50 /* FakePusher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
