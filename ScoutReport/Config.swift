@@ -12,6 +12,7 @@ class Config {
     // MARK: - Images
     static let logoImage          = UIImage(named: "logo")!
     static let instagramLogoImage = UIImage(named: "instagram-logo")!
+    static let youtubeLogoImage   = UIImage(named: "youtube-logo")!
 
     // MARK: - Text
     static let appNameText         = "Scout Report"

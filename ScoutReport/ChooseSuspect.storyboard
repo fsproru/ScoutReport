@@ -78,32 +78,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouTube Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFO-xZ-Wks">
-                                <rect key="frame" x="10" y="25" width="580" height="21"/>
+                                <rect key="frame" x="10" y="25" width="580" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V3t-vJ-02d">
-                                <rect key="frame" x="50" y="70.5" width="500" height="30"/>
+                                <rect key="frame" x="50" y="70" width="500" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtube-logo" translatesAutoresizingMaskIntoConstraints="NO" id="R3b-hO-tgj">
+                                <rect key="frame" x="236" y="150" width="128" height="128"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="R3b-hO-tgj" firstAttribute="centerX" secondItem="LPV-2s-Gwg" secondAttribute="centerX" id="0GE-Of-gh8"/>
                             <constraint firstAttribute="trailing" secondItem="V3t-vJ-02d" secondAttribute="trailing" constant="50" id="DDM-pH-rW1"/>
                             <constraint firstItem="sFO-xZ-Wks" firstAttribute="leading" secondItem="LPV-2s-Gwg" secondAttribute="leading" constant="10" id="Eh0-Rp-nAi"/>
                             <constraint firstItem="V3t-vJ-02d" firstAttribute="top" secondItem="sFO-xZ-Wks" secondAttribute="bottom" constant="25" id="T1F-Fo-Zeg"/>
                             <constraint firstItem="sFO-xZ-Wks" firstAttribute="top" secondItem="Kvf-kA-TJt" secondAttribute="bottom" constant="25" id="fTd-Br-yTQ"/>
+                            <constraint firstItem="R3b-hO-tgj" firstAttribute="top" secondItem="V3t-vJ-02d" secondAttribute="bottom" constant="50" id="ip1-lT-dfM"/>
                             <constraint firstItem="V3t-vJ-02d" firstAttribute="leading" secondItem="LPV-2s-Gwg" secondAttribute="leading" constant="50" id="p7l-16-UI1"/>
                             <constraint firstAttribute="trailing" secondItem="sFO-xZ-Wks" secondAttribute="trailing" constant="10" id="skn-Rn-2CV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="youtubeLabel" destination="sFO-xZ-Wks" id="9Iu-C0-FCa"/>
+                        <outlet property="youtubeLogoImageView" destination="R3b-hO-tgj" id="1L3-QP-TdX"/>
                         <outlet property="youtubeUsernameField" destination="V3t-vJ-02d" id="mLu-j1-zgC"/>
                     </connections>
                 </viewController>
@@ -133,5 +140,6 @@
     </scenes>
     <resources>
         <image name="instagram-logo" width="128" height="128"/>
+        <image name="youtube-logo" width="128" height="128"/>
     </resources>
 </document>

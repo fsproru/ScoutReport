@@ -12,6 +12,7 @@ class ChooseYoutubeViewControllerTest: XCTestCase {
     }
 
     func testAppearance() {
+        XCTAssertEqual(Config.youtubeLogoImage,       controller.youtubeLogoImageView.image)
         XCTAssertEqual(Config.chooseYoutubeText,      controller.youtubeLabel.text)
         XCTAssertEqual(Config.standardHeaderFont,     controller.youtubeLabel.font)
         XCTAssertEqual(Config.standardBodyFont,       controller.youtubeUsernameField.font)
