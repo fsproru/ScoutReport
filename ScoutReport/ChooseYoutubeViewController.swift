@@ -5,7 +5,8 @@ class ChooseYoutubeViewController: UIViewController {
     @IBOutlet var youtubeUsernameField: UITextField!
 
     override func viewDidLoad() {
-        youtubeLabel.font = Config.standardHeaderFont
+        youtubeLabel.font         = Config.standardHeaderFont
         youtubeUsernameField.font = Config.standardBodyFont
+        view.backgroundColor      = Config.youtubeBackgroundColor
     }
 }
