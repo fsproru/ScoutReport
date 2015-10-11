@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Suspect Controller-->
+        <scene sceneID="cRq-tR-j67">
+            <objects>
+                <viewController storyboardIdentifier="chooseSuspectController" id="B2c-fL-8aB" customClass="ChooseSuspectController" customModule="ScoutReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cZO-ZP-XZD"/>
+                        <viewControllerLayoutGuide type="bottom" id="vBw-yO-938"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDJ-Pg-sSk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWc-o9-5JN">
+                                <rect key="frame" x="252" y="75" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="B2c-fL-8aB" id="NXX-m1-xJe"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vbt-ag-gJG"/>
+                    <connections>
+                        <outlet property="instagramUsernameField" destination="fWc-o9-5JN" id="ObR-xQ-0aW"/>
+                        <segue destination="26d-Pq-ere" kind="show" identifier="chooseYoutube" id="oAU-4c-Z1z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chh-5t-VRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="321"/>
+        </scene>
+        <!--Choose Youtube View Controller-->
+        <scene sceneID="cCk-Io-Jcn">
+            <objects>
+                <viewController storyboardIdentifier="chooseYoutubeViewController" id="26d-Pq-ere" customClass="ChooseYoutubeViewController" customModule="ScoutReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kvf-kA-TJt"/>
+                        <viewControllerLayoutGuide type="bottom" id="b6a-14-Cvh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LPV-2s-Gwg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oop-G1-Awt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1555" y="321"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RP5-dm-bco">
+            <objects>
+                <navigationController storyboardIdentifier="chooseSuspectNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="MHy-A8-tke" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aAH-Wp-5so">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B2c-fL-8aB" kind="relationship" relationship="rootViewController" id="doa-2a-8ii"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qT-c7-ajY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="321"/>
+        </scene>
+    </scenes>
+</document>
