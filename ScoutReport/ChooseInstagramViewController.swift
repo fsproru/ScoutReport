@@ -20,7 +20,7 @@ class ChooseInstagramViewController: UIViewController, UITextFieldDelegate {
         if let navigationController = navigationController {
             let nextViewController = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseYoutubeViewController") as! ChooseYoutubeViewController
             nextViewController.chosenInstagramUsername = instagramUsernameField.text
-            pusher.pushViewController(navigationController: navigationController, viewControllerToPush: nextViewController)
+            pusher.pushViewController(navigationController: navigationController, viewControllerToPush: nextViewController, animated: true)
         }
     }
 }
