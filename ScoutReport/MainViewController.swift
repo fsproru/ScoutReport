@@ -6,5 +6,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         appNameLabel.text = Config.appNameText
+        appNameLabel.font = Config.standardHeaderFont
     }
 }
