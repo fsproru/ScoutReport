@@ -2,7 +2,8 @@ import UIKit
 
 class ChooseInstagramViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var instagramUsernameField: UITextField!
-    @IBOutlet var instagramLabel: UILabel!
+    @IBOutlet var instagramLabel:         UILabel!
+    @IBOutlet var instagramLogoImageView: UIImageView!
     var pusher: PusherType = Pusher()
 
     override func viewDidLoad() {

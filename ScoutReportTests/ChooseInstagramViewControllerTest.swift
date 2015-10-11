@@ -14,6 +14,7 @@ class ChooseInstagramViewControllerTest: XCTestCase {
     }
 
     func testAppearance() {
+        XCTAssertEqual(Config.instagramLogoImage, controller.instagramLogoImageView.image)
         XCTAssertEqual(Config.chooseInstagramText,      controller.instagramLabel.text)
         XCTAssertEqual(Config.standardBodyFont,         controller.instagramUsernameField.font)
         XCTAssertEqual(Config.standardHeaderFont,       controller.instagramLabel.font)

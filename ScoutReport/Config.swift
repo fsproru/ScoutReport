@@ -10,7 +10,8 @@ class Config {
     static let standardBodyFont         = UIFont.systemFontOfSize(17, weight: UIFontWeightLight)
 
     // MARK: - Images
-    static let logoImage = UIImage(named: "logo")!
+    static let logoImage          = UIImage(named: "logo")!
+    static let instagramLogoImage = UIImage(named: "instagram-logo")!
 
     // MARK: - Text
     static let appNameText         = "Scout Report"
