@@ -10,10 +10,12 @@ class ChooseSuspectViewControllerTest: XCTestCase {
         controller = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseSuspectViewController") as! ChooseSuspectViewController
         controller.pusher = pusher
         setupNavigationControllerViewStack(viewController: controller)
+        controller.loadViewIfNeeded()
     }
 
-    func testBackground() {
-        XCTAssertEqual(controller.view.backgroundColor, Config.instagramBackgroundColor)
+    func testAppearance() {
+        XCTAssertEqual(Config.standardHeaderFont,       controller.instagramLabel.font)
+        XCTAssertEqual(Config.instagramBackgroundColor, controller.view.backgroundColor)
     }
 
     func testChoosingInstagram() {

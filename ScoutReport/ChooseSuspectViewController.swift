@@ -2,9 +2,11 @@ import UIKit
 
 class ChooseSuspectViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var instagramUsernameField: UITextField!
+    @IBOutlet var instagramLabel: UILabel!
     var pusher: PusherType = Pusher()
 
     override func viewDidLoad() {
+        instagramLabel.font  = Config.standardHeaderFont
         view.backgroundColor = Config.instagramBackgroundColor
     }
 

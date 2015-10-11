@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Choose Suspect View Controller-->
+        <!--INSTAGRAM-->
         <scene sceneID="cRq-tR-j67">
             <objects>
                 <viewController storyboardIdentifier="chooseSuspectViewController" id="B2c-fL-8aB" customClass="ChooseSuspectViewController" customModule="ScoutReport" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,24 +13,43 @@
                         <viewControllerLayoutGuide type="bottom" id="vBw-yO-938"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aDJ-Pg-sSk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWc-o9-5JN">
-                                <rect key="frame" x="252" y="75" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWc-o9-5JN">
+                                <rect key="frame" x="50" y="81" width="500" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="B2c-fL-8aB" id="NXX-m1-xJe"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type in someone's instagram username below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhI-pn-fYD">
+                                <rect key="frame" x="10" y="25" width="580" height="31.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OhI-pn-fYD" firstAttribute="leading" secondItem="aDJ-Pg-sSk" secondAttribute="leading" constant="10" id="8pv-3b-yFA"/>
+                            <constraint firstItem="fWc-o9-5JN" firstAttribute="centerX" secondItem="aDJ-Pg-sSk" secondAttribute="centerX" id="KGA-cq-LtJ"/>
+                            <constraint firstItem="OhI-pn-fYD" firstAttribute="top" secondItem="cZO-ZP-XZD" secondAttribute="bottom" constant="25" id="SyH-TG-dnF"/>
+                            <constraint firstItem="OhI-pn-fYD" firstAttribute="centerX" secondItem="aDJ-Pg-sSk" secondAttribute="centerX" id="TBu-sd-ezC"/>
+                            <constraint firstItem="fWc-o9-5JN" firstAttribute="leading" secondItem="aDJ-Pg-sSk" secondAttribute="leading" constant="50" id="TUD-kR-Gw2"/>
+                            <constraint firstAttribute="trailing" secondItem="fWc-o9-5JN" secondAttribute="trailing" constant="50" id="Ymd-lj-4fo"/>
+                            <constraint firstAttribute="trailing" secondItem="OhI-pn-fYD" secondAttribute="trailing" constant="10" id="ru9-xJ-CDi"/>
+                            <constraint firstItem="fWc-o9-5JN" firstAttribute="top" secondItem="OhI-pn-fYD" secondAttribute="bottom" constant="25" id="yhb-eO-qYc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Vbt-ag-gJG"/>
+                    <navigationItem key="navigationItem" title="INSTAGRAM" id="Vbt-ag-gJG"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="instagramLabel" destination="OhI-pn-fYD" id="1sl-WN-yhV"/>
                         <outlet property="instagramUsernameField" destination="fWc-o9-5JN" id="ObR-xQ-0aW"/>
                         <segue destination="26d-Pq-ere" kind="show" identifier="chooseYoutube" id="oAU-4c-Z1z"/>
                     </connections>
@@ -48,7 +67,7 @@
                         <viewControllerLayoutGuide type="bottom" id="b6a-14-Cvh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LPV-2s-Gwg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
