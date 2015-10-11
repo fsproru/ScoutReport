@@ -10,6 +10,7 @@ class MainViewControllerTest: XCTestCase {
     }
 
     func testAppearance() {
+        XCTAssertEqual(Config.appNameText, controller.appNameLabel.text!)
         XCTAssertEqual(Config.logoImage, controller.logoImageView.image!)
     }
 }

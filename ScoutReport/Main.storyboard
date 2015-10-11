@@ -20,15 +20,25 @@
                                 <rect key="frame" x="240" y="236" width="120" height="128"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OL1-gu-Kbw">
+                                <rect key="frame" x="260" y="140.5" width="80.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WNv-GQ-CLQ" firstAttribute="centerY" secondItem="cgF-h5-1GC" secondAttribute="centerY" id="51r-nU-gXZ"/>
+                            <constraint firstItem="OL1-gu-Kbw" firstAttribute="centerX" secondItem="cgF-h5-1GC" secondAttribute="centerX" id="m9z-Hb-U7s"/>
                             <constraint firstItem="WNv-GQ-CLQ" firstAttribute="centerX" secondItem="cgF-h5-1GC" secondAttribute="centerX" id="vKa-a9-fSe"/>
+                            <constraint firstItem="WNv-GQ-CLQ" firstAttribute="top" secondItem="OL1-gu-Kbw" secondAttribute="bottom" constant="75" id="y0f-sg-ySg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="appNameLabel" destination="OL1-gu-Kbw" id="dxm-V1-98q"/>
                         <outlet property="logoImageView" destination="WNv-GQ-CLQ" id="Dlb-9I-BSM"/>
                     </connections>
                 </viewController>

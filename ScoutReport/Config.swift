@@ -11,4 +11,7 @@ class Config {
 
     // MARK: - Images
     static let logoImage = UIImage(named: "logo")!
+
+    // MARK: - Text
+    static let appNameText = "Scout Report"
 }
