@@ -4,6 +4,9 @@
 
 Follow your favorite people on multiple social networks in one iOS app 💥
 
+### Prerequisite
+- Install [Homebrew](http://brew.sh)
+
 ### Setup
 ```shell
 git clone git@github.com:/fsproru/ScoutReport.git
