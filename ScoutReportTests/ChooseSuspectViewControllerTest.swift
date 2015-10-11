@@ -1,13 +1,13 @@
 import XCTest
 @testable import ScoutReport
 
-class ChooseSuspectViewControllerTest: XCTestCase {
-    var controller: ChooseSuspectViewController!
+class ChooseInstagramViewControllerTest: XCTestCase {
+    var controller: ChooseInstagramViewController!
     let pusher = FakePusher()
 
     override func setUp() {
         super.setUp()
-        controller = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseSuspectViewController") as! ChooseSuspectViewController
+        controller = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseInstagramViewController") as! ChooseInstagramViewController
         controller.pusher = pusher
         setupNavigationControllerViewStack(viewController: controller)
         controller.loadViewIfNeeded()

@@ -7,7 +7,7 @@
         <!--INSTAGRAM-->
         <scene sceneID="cRq-tR-j67">
             <objects>
-                <viewController storyboardIdentifier="chooseSuspectViewController" id="B2c-fL-8aB" customClass="ChooseSuspectViewController" customModule="ScoutReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chooseInstagramViewController" id="B2c-fL-8aB" customClass="ChooseInstagramViewController" customModule="ScoutReport" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cZO-ZP-XZD"/>
                         <viewControllerLayoutGuide type="bottom" id="vBw-yO-938"/>
