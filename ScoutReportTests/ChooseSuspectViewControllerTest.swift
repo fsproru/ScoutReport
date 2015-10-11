@@ -20,11 +20,15 @@ class ChooseInstagramViewControllerTest: XCTestCase {
     }
 
     func testChoosingInstagram() {
+        let instagramUsername = "@spidername"
         controller.loadViewIfNeeded()
-        controller.instagramUsernameField.text = "@spiderman"
+        controller.instagramUsernameField.text = instagramUsername
 
         XCTAssertNil(pusher.pushedViewController)
         controller.textFieldShouldReturn(controller.instagramUsernameField)
         XCTAssert(pusher.pushedViewController is ChooseYoutubeViewController)
+
+        let pushedViewController = pusher.pushedViewController as! ChooseYoutubeViewController
+        XCTAssertEqual(instagramUsername, pushedViewController.chosenInstagramUsername!)
     }
 }

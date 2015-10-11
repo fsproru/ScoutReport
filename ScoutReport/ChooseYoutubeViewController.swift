@@ -3,6 +3,7 @@ import UIKit
 class ChooseYoutubeViewController: UIViewController {
     @IBOutlet var youtubeLabel: UILabel!
     @IBOutlet var youtubeUsernameField: UITextField!
+    var chosenInstagramUsername: String?
 
     override func viewDidLoad() {
         youtubeLabel.font         = Config.standardHeaderFont
