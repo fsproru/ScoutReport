@@ -7,6 +7,7 @@ class ChooseInstagramViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         instagramLabel.font         = Config.standardHeaderFont
+        instagramLabel.text         = Config.chooseInstagramText
         instagramUsernameField.font = Config.standardBodyFont
         view.backgroundColor        = Config.instagramBackgroundColor
     }

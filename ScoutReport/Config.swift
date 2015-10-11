@@ -13,5 +13,6 @@ class Config {
     static let logoImage = UIImage(named: "logo")!
 
     // MARK: - Text
-    static let appNameText = "Scout Report"
+    static let appNameText         = "Scout Report"
+    static let chooseInstagramText = "Type in someone's instagram username below"
 }
