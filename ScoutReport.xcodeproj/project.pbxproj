@@ -12,6 +12,7 @@
 		62816C201BC9F13900946F50 /* Pusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C1F1BC9F13900946F50 /* Pusher.swift */; settings = {ASSET_TAGS = (); }; };
 		62816C251BC9F25E00946F50 /* FakePusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C241BC9F25E00946F50 /* FakePusher.swift */; settings = {ASSET_TAGS = (); }; };
 		62816C281BC9F85500946F50 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C271BC9F85500946F50 /* XCTestCase.swift */; settings = {ASSET_TAGS = (); }; };
+		62816C2A1BC9F92700946F50 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C291BC9F92700946F50 /* Config.swift */; settings = {ASSET_TAGS = (); }; };
 		6288984D1BC8E9F300D9A0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288984C1BC8E9F300D9A0E9 /* AppDelegate.swift */; };
 		6288984F1BC8E9F300D9A0E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288984E1BC8E9F300D9A0E9 /* ViewController.swift */; };
 		628898521BC8E9F300D9A0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628898501BC8E9F300D9A0E9 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		62816C1F1BC9F13900946F50 /* Pusher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pusher.swift; sourceTree = "<group>"; };
 		62816C241BC9F25E00946F50 /* FakePusher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePusher.swift; sourceTree = "<group>"; };
 		62816C271BC9F85500946F50 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		62816C291BC9F92700946F50 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		628898491BC8E9F300D9A0E9 /* ScoutReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoutReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6288984C1BC8E9F300D9A0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6288984E1BC8E9F300D9A0E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		62816C1E1BC9F11E00946F50 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				62816C291BC9F92700946F50 /* Config.swift */,
 				62816C1F1BC9F13900946F50 /* Pusher.swift */,
 			);
 			name = Helpers;
@@ -306,6 +309,7 @@
 				6288987A1BC98C7900D9A0E9 /* ChooseSuspectViewController.swift in Sources */,
 				628898721BC8F64700D9A0E9 /* Suspect.swift in Sources */,
 				6288984D1BC8E9F300D9A0E9 /* AppDelegate.swift in Sources */,
+				62816C2A1BC9F92700946F50 /* Config.swift in Sources */,
 				62816C1D1BC9EDB600946F50 /* ChooseYoutubeViewController.swift in Sources */,
 				62816C201BC9F13900946F50 /* Pusher.swift in Sources */,
 			);

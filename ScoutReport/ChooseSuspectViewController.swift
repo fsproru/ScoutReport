@@ -4,6 +4,10 @@ class ChooseSuspectViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var instagramUsernameField: UITextField!
     var pusher: PusherType = Pusher()
 
+    override func viewDidLoad() {
+        view.backgroundColor = Config.instagramBackgroundColor
+    }
+
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         pushNextViewController()
         return true

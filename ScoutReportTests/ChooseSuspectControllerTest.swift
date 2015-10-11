@@ -12,6 +12,10 @@ class ChooseSuspectViewControllerTest: XCTestCase {
         setupNavigationControllerViewStack(viewController: controller)
     }
 
+    func testBackground() {
+        XCTAssertEqual(controller.view.backgroundColor, Config.instagramBackgroundColor)
+    }
+
     func testChoosingInstagram() {
         controller.loadViewIfNeeded()
         controller.instagramUsernameField.text = "@spiderman"
