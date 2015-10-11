@@ -13,9 +13,17 @@ class MainViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        let chooseSuspectNavigationController = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseSuspectNavigationController") as! UINavigationController
+        chooseWhereToGo()
+    }
+
+    private func chooseWhereToGo() {
         if Suspect.chosenSuspect == nil {
+            let chooseSuspectNavigationController = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseSuspectNavigationController") as! UINavigationController
+
             presenter.present(underlyingViewController: self, viewControllerToPresent: chooseSuspectNavigationController, animated: true, completion: nil)
+        } else {
+            let feedViewController = UIStoryboard.loadViewController(storyboardName: "Feed", identifier: "feedNavigationController") as! UINavigationController
+            presenter.present(underlyingViewController: self, viewControllerToPresent: feedViewController, animated: true, completion: nil)
         }
     }
 }

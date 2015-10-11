@@ -26,4 +26,16 @@ class MainViewControllerTest: XCTestCase {
         let presentedViewController = presenter.presentedViewController as! UINavigationController
         XCTAssert(presentedViewController.topViewController is ChooseInstagramViewController)
     }
+
+    func testSuspectIsAlreadyChosen() {
+        let instagramUsername = "ironman"
+        let youtubeUsername   = "irondude"
+        Suspect.chosenSuspect = Suspect(instagramUsername: instagramUsername, youtubeUsername: youtubeUsername)
+        XCTAssertNil(presenter.presentedViewController)
+
+        controller.beginAppearanceTransition(true, animated: false)
+        controller.endAppearanceTransition()
+        let presentedViewController = presenter.presentedViewController as! UINavigationController
+        XCTAssert(presentedViewController.topViewController is FeedViewController)
+    }
 }
