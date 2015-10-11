@@ -2,8 +2,8 @@ import UIKit
 
 class Config {
     // MARK: - Colors
-    static let instagramBackgroundColor = UIColor.blueColor()
-    static let youtubeBackgroundColor   = UIColor.redColor()
+    static let instagramBackgroundColor = UIColor.whiteColor()
+    static let youtubeBackgroundColor   = UIColor.whiteColor()
 
     // MARK: - Fonts
     static let standardHeaderFont       = UIFont.systemFontOfSize(30, weight: UIFontWeightLight)
