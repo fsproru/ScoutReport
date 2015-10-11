@@ -14,6 +14,8 @@
 		62816C281BC9F85500946F50 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C271BC9F85500946F50 /* XCTestCase.swift */; settings = {ASSET_TAGS = (); }; };
 		62816C2A1BC9F92700946F50 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C291BC9F92700946F50 /* Config.swift */; settings = {ASSET_TAGS = (); }; };
 		62816C2E1BCA1FB000946F50 /* ChooseYoutubeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C2D1BCA1FB000946F50 /* ChooseYoutubeViewControllerTest.swift */; settings = {ASSET_TAGS = (); }; };
+		62816C301BCA2F4500946F50 /* Dismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C2F1BCA2F4500946F50 /* Dismisser.swift */; settings = {ASSET_TAGS = (); }; };
+		62816C321BCA30B600946F50 /* FakeDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C311BCA30B600946F50 /* FakeDismisser.swift */; settings = {ASSET_TAGS = (); }; };
 		6288984D1BC8E9F300D9A0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288984C1BC8E9F300D9A0E9 /* AppDelegate.swift */; };
 		6288984F1BC8E9F300D9A0E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288984E1BC8E9F300D9A0E9 /* ViewController.swift */; };
 		628898541BC8E9F300D9A0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628898531BC8E9F300D9A0E9 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		62816C271BC9F85500946F50 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		62816C291BC9F92700946F50 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		62816C2D1BCA1FB000946F50 /* ChooseYoutubeViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseYoutubeViewControllerTest.swift; sourceTree = "<group>"; };
+		62816C2F1BCA2F4500946F50 /* Dismisser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dismisser.swift; sourceTree = "<group>"; };
+		62816C311BCA30B600946F50 /* FakeDismisser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeDismisser.swift; sourceTree = "<group>"; };
 		628898491BC8E9F300D9A0E9 /* ScoutReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoutReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6288984C1BC8E9F300D9A0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6288984E1BC8E9F300D9A0E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				62816C291BC9F92700946F50 /* Config.swift */,
+				62816C2F1BCA2F4500946F50 /* Dismisser.swift */,
 				62816C1F1BC9F13900946F50 /* Pusher.swift */,
 			);
 			name = Helpers;
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				62816C241BC9F25E00946F50 /* FakePusher.swift */,
+				62816C311BCA30B600946F50 /* FakeDismisser.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -303,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62816C301BCA2F4500946F50 /* Dismisser.swift in Sources */,
 				6288984F1BC8E9F300D9A0E9 /* ViewController.swift in Sources */,
 				62816C1B1BC9ECE200946F50 /* UIStoryboard.swift in Sources */,
 				6288987A1BC98C7900D9A0E9 /* ChooseInstagramViewController.swift in Sources */,
@@ -320,6 +327,7 @@
 			files = (
 				628898761BC8F8F600D9A0E9 /* ChooseInstagramViewControllerTest.swift in Sources */,
 				628898701BC8F53400D9A0E9 /* SuspectTest.swift in Sources */,
+				62816C321BCA30B600946F50 /* FakeDismisser.swift in Sources */,
 				62816C281BC9F85500946F50 /* XCTestCase.swift in Sources */,
 				62816C2E1BCA1FB000946F50 /* ChooseYoutubeViewControllerTest.swift in Sources */,
 				62816C251BC9F25E00946F50 /* FakePusher.swift in Sources */,

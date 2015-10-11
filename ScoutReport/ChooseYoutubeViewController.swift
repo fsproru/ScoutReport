@@ -4,6 +4,7 @@ class ChooseYoutubeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var youtubeLabel: UILabel!
     @IBOutlet var youtubeUsernameField: UITextField!
     var chosenInstagramUsername: String?
+    var dismisser: DismisserType = Dismisser()
 
     override func viewDidLoad() {
         youtubeLabel.font             = Config.standardHeaderFont
@@ -16,6 +17,7 @@ class ChooseYoutubeViewController: UIViewController, UITextFieldDelegate {
         if let chosenInstagramUsername = chosenInstagramUsername, chosenYoutubeUsername = youtubeUsernameField.text {
             let chosenSuspect = Suspect(instagramUsername: chosenInstagramUsername, youtubeUsername: chosenYoutubeUsername)
             Suspect.chosenSuspect = chosenSuspect
+            dismisser.dismiss(viewController: self, animated: true, completion: nil)
             return true
         } else {
             return false

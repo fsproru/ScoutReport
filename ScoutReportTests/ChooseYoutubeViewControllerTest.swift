@@ -3,9 +3,11 @@ import XCTest
 
 class ChooseYoutubeViewControllerTest: XCTestCase {
     var controller: ChooseYoutubeViewController!
+    let dismisser = FakeDismisser()
 
     override func setUp() {
         controller = UIStoryboard.loadViewController(storyboardName: "ChooseSuspect", identifier: "chooseYoutubeViewController") as! ChooseYoutubeViewController
+        controller.dismisser = dismisser
         controller.loadViewIfNeeded()
     }
 
@@ -22,6 +24,7 @@ class ChooseYoutubeViewControllerTest: XCTestCase {
         controller.youtubeUsernameField.text = nil
         controller.chosenInstagramUsername   = nil
         XCTAssertNil(Suspect.chosenSuspect)
+        XCTAssertNil(dismisser.dismissedViewController)
 
         controller.youtubeUsernameField.text = chosenYoutubeUsername
         controller.chosenInstagramUsername   = chosenInstagramUsername
@@ -29,5 +32,6 @@ class ChooseYoutubeViewControllerTest: XCTestCase {
         let chosenSuspect = Suspect.chosenSuspect
         XCTAssert(chosenSuspect != nil)
         XCTAssertEqual(chosenYoutubeUsername, chosenSuspect!.youtubeUsername)
+        XCTAssertEqual(dismisser.dismissedViewController, controller)
     }
 }
