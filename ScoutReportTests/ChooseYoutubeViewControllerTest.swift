@@ -18,10 +18,13 @@ class ChooseYoutubeViewControllerTest: XCTestCase {
     func testChoosingYoutubeUsername() {
         let chosenYoutubeUsername   = "batman"
         let chosenInstagramUsername = "batdude"
-        controller.youtubeUsernameField.text = chosenYoutubeUsername
-        controller.chosenInstagramUsername = chosenInstagramUsername
 
+        controller.youtubeUsernameField.text = nil
+        controller.chosenInstagramUsername   = nil
         XCTAssertNil(Suspect.chosenSuspect)
+
+        controller.youtubeUsernameField.text = chosenYoutubeUsername
+        controller.chosenInstagramUsername   = chosenInstagramUsername
         controller.textFieldShouldReturn(controller.youtubeUsernameField)
         let chosenSuspect = Suspect.chosenSuspect
         XCTAssert(chosenSuspect != nil)
