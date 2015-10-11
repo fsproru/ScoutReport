@@ -18,4 +18,7 @@ class Config {
     static let appNameText         = "Scout Report"
     static let chooseInstagramText = "Type in someone's instagram username below"
     static let chooseYoutubeText   = "and a youtube username of the same person"
+
+    // MARK: - Text Attributes
+    static let standardInputFieldTextAlignment: NSTextAlignment = .Center
 }

@@ -8,12 +8,13 @@ class ChooseYoutubeViewController: UIViewController, UITextFieldDelegate {
     var dismisser: DismisserType = Dismisser()
 
     override func viewDidLoad() {
-        youtubeLogoImageView.image    = Config.youtubeLogoImage
-        youtubeLabel.font             = Config.standardHeaderFont
-        youtubeLabel.text             = Config.chooseYoutubeText
-        youtubeUsernameField.font     = Config.standardBodyFont
-        view.backgroundColor          = Config.youtubeBackgroundColor
-        youtubeUsernameField.delegate = self
+        youtubeLogoImageView.image         = Config.youtubeLogoImage
+        youtubeLabel.font                  = Config.standardHeaderFont
+        youtubeLabel.text                  = Config.chooseYoutubeText
+        youtubeUsernameField.font          = Config.standardBodyFont
+        youtubeUsernameField.textAlignment = Config.standardInputFieldTextAlignment
+        view.backgroundColor               = Config.youtubeBackgroundColor
+        youtubeUsernameField.delegate      = self
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {

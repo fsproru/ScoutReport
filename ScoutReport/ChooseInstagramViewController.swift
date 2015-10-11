@@ -7,11 +7,12 @@ class ChooseInstagramViewController: UIViewController, UITextFieldDelegate {
     var pusher: PusherType = Pusher()
 
     override func viewDidLoad() {
-        instagramLogoImageView.image = Config.instagramLogoImage
-        instagramLabel.font          = Config.standardHeaderFont
-        instagramLabel.text          = Config.chooseInstagramText
-        instagramUsernameField.font  = Config.standardBodyFont
-        view.backgroundColor         = Config.instagramBackgroundColor
+        instagramLogoImageView.image         = Config.instagramLogoImage
+        instagramLabel.font                  = Config.standardHeaderFont
+        instagramLabel.text                  = Config.chooseInstagramText
+        instagramUsernameField.font          = Config.standardBodyFont
+        instagramUsernameField.textAlignment = Config.standardInputFieldTextAlignment
+        view.backgroundColor                 = Config.instagramBackgroundColor
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
