@@ -8,6 +8,7 @@ class ChooseYoutubeViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         youtubeLabel.font             = Config.standardHeaderFont
+        youtubeLabel.text             = Config.chooseYoutubeText
         youtubeUsernameField.font     = Config.standardBodyFont
         view.backgroundColor          = Config.youtubeBackgroundColor
         youtubeUsernameField.delegate = self
