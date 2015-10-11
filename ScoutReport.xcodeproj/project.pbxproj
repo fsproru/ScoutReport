@@ -20,7 +20,7 @@
 		628898571BC8E9F300D9A0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628898551BC8E9F300D9A0E9 /* LaunchScreen.storyboard */; };
 		628898701BC8F53400D9A0E9 /* SuspectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288986F1BC8F53400D9A0E9 /* SuspectTest.swift */; settings = {ASSET_TAGS = (); }; };
 		628898721BC8F64700D9A0E9 /* Suspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628898711BC8F64700D9A0E9 /* Suspect.swift */; settings = {ASSET_TAGS = (); }; };
-		628898761BC8F8F600D9A0E9 /* ChooseSuspectViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628898751BC8F8F600D9A0E9 /* ChooseSuspectViewControllerTest.swift */; settings = {ASSET_TAGS = (); }; };
+		628898761BC8F8F600D9A0E9 /* ChooseInstagramViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628898751BC8F8F600D9A0E9 /* ChooseInstagramViewControllerTest.swift */; settings = {ASSET_TAGS = (); }; };
 		6288987A1BC98C7900D9A0E9 /* ChooseInstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628898791BC98C7900D9A0E9 /* ChooseInstagramViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		628898801BC98FB500D9A0E9 /* ChooseSuspect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6288987F1BC98FB500D9A0E9 /* ChooseSuspect.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -53,7 +53,7 @@
 		6288986C1BC8F50D00D9A0E9 /* ScoutReportTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScoutReportTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		6288986F1BC8F53400D9A0E9 /* SuspectTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuspectTest.swift; sourceTree = "<group>"; };
 		628898711BC8F64700D9A0E9 /* Suspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suspect.swift; sourceTree = "<group>"; };
-		628898751BC8F8F600D9A0E9 /* ChooseSuspectViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSuspectViewControllerTest.swift; sourceTree = "<group>"; };
+		628898751BC8F8F600D9A0E9 /* ChooseInstagramViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseInstagramViewControllerTest.swift; sourceTree = "<group>"; };
 		628898791BC98C7900D9A0E9 /* ChooseInstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseInstagramViewController.swift; sourceTree = "<group>"; };
 		6288987C1BC98CBD00D9A0E9 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		6288987F1BC98FB500D9A0E9 /* ChooseSuspect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseSuspect.storyboard; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 		628898781BC98C3900D9A0E9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				628898751BC8F8F600D9A0E9 /* ChooseSuspectViewControllerTest.swift */,
+				628898751BC8F8F600D9A0E9 /* ChooseInstagramViewControllerTest.swift */,
 				62816C2D1BCA1FB000946F50 /* ChooseYoutubeViewControllerTest.swift */,
 			);
 			name = ViewControllers;
@@ -318,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				628898761BC8F8F600D9A0E9 /* ChooseSuspectViewControllerTest.swift in Sources */,
+				628898761BC8F8F600D9A0E9 /* ChooseInstagramViewControllerTest.swift in Sources */,
 				628898701BC8F53400D9A0E9 /* SuspectTest.swift in Sources */,
 				62816C281BC9F85500946F50 /* XCTestCase.swift in Sources */,
 				62816C2E1BCA1FB000946F50 /* ChooseYoutubeViewControllerTest.swift in Sources */,

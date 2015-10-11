@@ -14,4 +14,17 @@ class ChooseYoutubeViewControllerTest: XCTestCase {
         XCTAssertEqual(Config.standardBodyFont,       controller.youtubeUsernameField.font)
         XCTAssertEqual(Config.youtubeBackgroundColor, controller.view.backgroundColor)
     }
+
+    func testChoosingYoutubeUsername() {
+        let chosenYoutubeUsername   = "batman"
+        let chosenInstagramUsername = "batdude"
+        controller.youtubeUsernameField.text = chosenYoutubeUsername
+        controller.chosenInstagramUsername = chosenInstagramUsername
+
+        XCTAssertNil(Suspect.chosenSuspect)
+        controller.textFieldShouldReturn(controller.youtubeUsernameField)
+        let chosenSuspect = Suspect.chosenSuspect
+        XCTAssert(chosenSuspect != nil)
+        XCTAssertEqual(chosenYoutubeUsername, chosenSuspect!.youtubeUsername)
+    }
 }

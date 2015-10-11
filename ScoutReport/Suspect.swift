@@ -1,4 +1,6 @@
 struct Suspect {
-    let instagram_username: String
-    let youtube_username:   String
+    let instagramUsername: String
+    let youtubeUsername:   String
+
+    static var chosenSuspect: Suspect?
 }

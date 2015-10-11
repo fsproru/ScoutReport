@@ -19,7 +19,7 @@ class ChooseInstagramViewControllerTest: XCTestCase {
         XCTAssertEqual(Config.instagramBackgroundColor, controller.view.backgroundColor)
     }
 
-    func testChoosingInstagram() {
+    func testChoosingInstagramUsername() {
         let instagramUsername = "@spidername"
         controller.loadViewIfNeeded()
         controller.instagramUsernameField.text = instagramUsername
