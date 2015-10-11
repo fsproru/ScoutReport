@@ -6,8 +6,9 @@ class ChooseSuspectViewController: UIViewController, UITextFieldDelegate {
     var pusher: PusherType = Pusher()
 
     override func viewDidLoad() {
-        instagramLabel.font  = Config.standardHeaderFont
-        view.backgroundColor = Config.instagramBackgroundColor
+        instagramLabel.font         = Config.standardHeaderFont
+        instagramUsernameField.font = Config.standardBodyFont
+        view.backgroundColor        = Config.instagramBackgroundColor
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
