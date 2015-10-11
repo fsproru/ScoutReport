@@ -8,4 +8,7 @@ class Config {
     // MARK: - Fonts
     static let standardHeaderFont       = UIFont.systemFontOfSize(30, weight: UIFontWeightLight)
     static let standardBodyFont         = UIFont.systemFontOfSize(17, weight: UIFontWeightLight)
+
+    // MARK: - Images
+    static let logoImage = UIImage(named: "logo")!
 }
