@@ -2,7 +2,7 @@ import UIKit
 
 class FeedViewController: UIViewController {
     var instagramClient: InstagramClientType = InstagramClient()
-    var presenter:        PresenterType       = Presenter()
+    var presenter:       PresenterType       = Presenter()
 
     override func viewDidLoad() {
         authenticateWithInstagramIfNeeded()
