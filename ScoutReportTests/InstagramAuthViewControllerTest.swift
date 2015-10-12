@@ -3,9 +3,11 @@ import XCTest
 
 class InstagramAuthViewControllerTest: XCTestCase {
     var controller: InstagramAuthViewController!
+    let dismisser = FakeDismisser()
 
     override func setUp() {
         controller = UIStoryboard.loadViewController(storyboardName: "Feed", identifier: "instagramAuthViewController") as! InstagramAuthViewController
+        controller.dismisser = dismisser
     }
 
     func testInstagramWebViewConfiguration() {
@@ -22,6 +24,7 @@ class InstagramAuthViewControllerTest: XCTestCase {
         let savedInstagramAccessToken = Suspect.chosenSuspect!.instagramAccessToken!
         XCTAssertFalse(shouldStartLoadingRequest)
         XCTAssertEqual(accessToken, savedInstagramAccessToken)
+        XCTAssertEqual(dismisser.dismissedViewController, controller)
     }
 
     func testLoginInstagramAuthRequest() {
