@@ -4,6 +4,25 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
+        <!--Instagram Auth View Controller-->
+        <scene sceneID="dlk-Yn-SLK">
+            <objects>
+                <viewController storyboardIdentifier="instagramAuthViewController" id="nxd-pA-CGy" customClass="InstagramAuthViewController" customModule="ScoutReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SHh-vd-q0O"/>
+                        <viewControllerLayoutGuide type="bottom" id="IRL-HH-p8M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qlo-pA-MJg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jg4-wE-tiY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="-295"/>
+        </scene>
         <!--Feed View Controller-->
         <scene sceneID="Qbg-2i-Zqb">
             <objects>
@@ -22,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEz-YA-fxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1231" y="419"/>
+            <point key="canvasLocation" x="1144" y="419"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yE1-EN-mr9">
