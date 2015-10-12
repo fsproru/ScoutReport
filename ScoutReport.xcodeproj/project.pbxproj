@@ -15,6 +15,7 @@
 		620B0CFF1BCA709B004BE4F6 /* InstagramMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B0CFE1BCA709B004BE4F6 /* InstagramMedia.swift */; settings = {ASSET_TAGS = (); }; };
 		620B0D021BCA710E004BE4F6 /* FakeInstagramClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B0D011BCA710E004BE4F6 /* FakeInstagramClient.swift */; settings = {ASSET_TAGS = (); }; };
 		620B0D041BCA713F004BE4F6 /* FakeFuncCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B0D031BCA713F004BE4F6 /* FakeFuncCall.swift */; settings = {ASSET_TAGS = (); }; };
+		62237A721BCB871000EA042B /* InstagramAuthViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62237A711BCB871000EA042B /* InstagramAuthViewControllerTest.swift */; settings = {ASSET_TAGS = (); }; };
 		625C32011BCB2ED80079709A /* InstagramAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625C32001BCB2ED80079709A /* InstagramAuthViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		62816C1B1BC9ECE200946F50 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288987C1BC98CBD00D9A0E9 /* UIStoryboard.swift */; settings = {ASSET_TAGS = (); }; };
 		62816C1D1BC9EDB600946F50 /* ChooseYoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62816C1C1BC9EDB600946F50 /* ChooseYoutubeViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -59,6 +60,7 @@
 		620B0CFE1BCA709B004BE4F6 /* InstagramMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramMedia.swift; sourceTree = "<group>"; };
 		620B0D011BCA710E004BE4F6 /* FakeInstagramClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeInstagramClient.swift; sourceTree = "<group>"; };
 		620B0D031BCA713F004BE4F6 /* FakeFuncCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeFuncCall.swift; sourceTree = "<group>"; };
+		62237A711BCB871000EA042B /* InstagramAuthViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramAuthViewControllerTest.swift; sourceTree = "<group>"; };
 		625C32001BCB2ED80079709A /* InstagramAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramAuthViewController.swift; sourceTree = "<group>"; };
 		62816C1C1BC9EDB600946F50 /* ChooseYoutubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseYoutubeViewController.swift; sourceTree = "<group>"; };
 		62816C1F1BC9F13900946F50 /* Pusher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pusher.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				62816C2D1BCA1FB000946F50 /* ChooseYoutubeViewControllerTest.swift */,
 				620B0CF71BCA63CD004BE4F6 /* FeedViewControllerTest.swift */,
 				62816C331BCA36FE00946F50 /* MainViewControllerTest.swift */,
+				62237A711BCB871000EA042B /* InstagramAuthViewControllerTest.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62237A721BCB871000EA042B /* InstagramAuthViewControllerTest.swift in Sources */,
 				62816C341BCA36FE00946F50 /* MainViewControllerTest.swift in Sources */,
 				628898761BC8F8F600D9A0E9 /* ChooseInstagramViewControllerTest.swift in Sources */,
 				628898701BC8F53400D9A0E9 /* SuspectTest.swift in Sources */,
