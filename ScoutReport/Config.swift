@@ -21,4 +21,8 @@ class Config {
 
     // MARK: - Text Attributes
     static let standardInputFieldTextAlignment: NSTextAlignment = .Center
+
+    // MARK: - Instagram API
+    static let instagramAuthURL = NSURL(string: "https://instagram.com/oauth/authorize/?client_id=f82a6b07a9924d2f86ef69e961242855&redirect_uri=https://localhost&response_type=token")!
+    static let instagramAccessTokenURLSubstring = "#access_token="
 }
