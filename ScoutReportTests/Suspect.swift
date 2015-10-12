@@ -1,10 +1,8 @@
 @testable import ScoutReport
 
 extension Suspect {
-    static func chooseStubbedSuspect() {
-        let instagramUsername = "hulk"
-        let youtubeUsername   = "big_nice_green_guy"
-        let stubbedSuspect = Suspect(instagramUsername: instagramUsername, youtubeUsername: youtubeUsername)
+    static func chooseStubbedSuspect(instagramUsername instagramUsername: String = "hulk", youtubeUsername: String = "big_nice_green_guy", instagramAccessToken: String? = nil) {
+        let stubbedSuspect = Suspect(instagramUsername: instagramUsername, youtubeUsername: youtubeUsername, instagramAccessToken: instagramAccessToken)
         Suspect.chosenSuspect = stubbedSuspect
     }
 }

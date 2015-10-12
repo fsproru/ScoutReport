@@ -3,9 +3,10 @@ struct Suspect {
     let youtubeUsername:      String
     var instagramAccessToken: String?
 
-    init(instagramUsername: String, youtubeUsername: String) {
-        self.instagramUsername = instagramUsername
-        self.youtubeUsername   = youtubeUsername
+    init(instagramUsername: String, youtubeUsername: String, instagramAccessToken: String? = nil) {
+        self.instagramUsername    = instagramUsername
+        self.youtubeUsername      = youtubeUsername
+        self.instagramAccessToken = instagramAccessToken
     }
 
     static var chosenSuspect: Suspect?

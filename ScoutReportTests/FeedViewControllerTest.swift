@@ -13,8 +13,14 @@ class FeedViewControllerTest: XCTestCase {
         controller.presenter       = presenter
     }
 
-    func testInstagramAuth() {
+    func testInstagramAuthIfSuspectIsAuthenticated() {
+        Suspect.chooseStubbedSuspect(instagramAccessToken: "accessGranted")
+        controller.loadViewIfNeeded()
         XCTAssertNil(presenter.presentedViewController)
+    }
+
+    func testInstagramAuthIfSuspectIsNotAuthenticated() {
+        Suspect.chosenSuspect!.instagramAccessToken = nil
         controller.loadViewIfNeeded()
         XCTAssert(presenter.presentedViewController is InstagramAuthViewController)
     }
