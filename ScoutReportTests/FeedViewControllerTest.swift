@@ -10,7 +10,7 @@ class FeedViewControllerTest: XCTestCase {
         Suspect.chooseStubbedSuspect()
         controller = UIStoryboard.loadViewController(storyboardName: "Feed", identifier: "feedViewController") as! FeedViewController
         controller.instagramClient = instagramClient
-        controller.presenter        = presenter
+        controller.presenter       = presenter
     }
 
     func testInstagramAuth() {
