@@ -26,8 +26,10 @@ class FeedViewControllerTest: XCTestCase {
     }
 
     func testInstagramFeed() {
+        Suspect.chooseStubbedSuspect(instagramAccessToken: "allGood")
         XCTAssertEqual(0, instagramClient.callsToGetContent.count)
-        controller.loadViewIfNeeded()
+        controller.beginAppearanceTransition(true, animated: false)
+        controller.endAppearanceTransition()
         XCTAssertEqual(1, instagramClient.callsToGetContent.count)
     }
 }

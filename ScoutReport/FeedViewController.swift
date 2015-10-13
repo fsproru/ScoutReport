@@ -6,6 +6,9 @@ class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         authenticateWithInstagramIfNeeded()
+    }
+
+    override func viewWillAppear(animated: Bool) {
         fetchContentIfNeeded()
     }
 
@@ -17,7 +20,7 @@ class FeedViewController: UIViewController {
     }
 
     private func fetchContentIfNeeded() {
-        if let instagramUsername = Suspect.chosenSuspect?.instagramUsername {
+        if let instagramUsername = Suspect.chosenSuspect?.instagramUsername where Suspect.chosenSuspect?.instagramAccessToken != nil {
             instagramClient.getContent(username: instagramUsername,
                 success: { instagramMedias in
                 },
