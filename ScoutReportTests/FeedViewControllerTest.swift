@@ -40,4 +40,16 @@ class FeedViewControllerTest: XCTestCase {
         controller.loadViewIfNeeded()
         XCTAssertEqual(1, controller.tableView(controller.tableView, numberOfRowsInSection: 0))
     }
+
+    func testRefreshControl() {
+        controller.loadViewIfNeeded()
+        var refreshControl: UIRefreshControl?
+        for view in controller.tableView.subviews {
+            if view is UIRefreshControl {
+                refreshControl = view as? UIRefreshControl
+                break
+            }
+        }
+        XCTAssert(refreshControl != nil)
+    }
 }
