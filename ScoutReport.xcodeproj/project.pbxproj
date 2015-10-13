@@ -46,6 +46,7 @@
 		628898801BC98FB500D9A0E9 /* ChooseSuspect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6288987F1BC98FB500D9A0E9 /* ChooseSuspect.storyboard */; settings = {ASSET_TAGS = (); }; };
 		62A7C2491BCCD7EC0052D285 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A7C2481BCCD7EC0052D285 /* SwiftyJSON.framework */; };
 		62A7C24A1BCCD8070052D285 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A7C2481BCCD7EC0052D285 /* SwiftyJSON.framework */; };
+		62A7C24C1BCCE4E50052D285 /* InstagramPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A7C24B1BCCE4E50052D285 /* InstagramPost.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		6288987C1BC98CBD00D9A0E9 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		6288987F1BC98FB500D9A0E9 /* ChooseSuspect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseSuspect.storyboard; sourceTree = "<group>"; };
 		62A7C2481BCCD7EC0052D285 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		62A7C24B1BCCE4E50052D285 /* InstagramPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				6288986F1BC8F53400D9A0E9 /* SuspectTest.swift */,
+				62A7C24B1BCCE4E50052D285 /* InstagramPost.swift */,
 				62237A731BCB970100EA042B /* InstagramUserTest.swift */,
 			);
 			name = Models;
@@ -438,6 +441,7 @@
 				628898701BC8F53400D9A0E9 /* SuspectTest.swift in Sources */,
 				62816C321BCA30B600946F50 /* FakeDismisser.swift in Sources */,
 				620B0CF81BCA63CD004BE4F6 /* FeedViewControllerTest.swift in Sources */,
+				62A7C24C1BCCE4E50052D285 /* InstagramPost.swift in Sources */,
 				62237A741BCB970100EA042B /* InstagramUserTest.swift in Sources */,
 				62237A781BCC862600EA042B /* InstagramClientTest.swift in Sources */,
 				62816C281BC9F85500946F50 /* XCTestCase.swift in Sources */,

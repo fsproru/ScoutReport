@@ -22,7 +22,7 @@ class FeedViewController: UIViewController {
     private func fetchContentIfNeeded() {
         if let instagramUsername = Suspect.chosenSuspect?.instagramUsername where Suspect.chosenSuspect?.instagramAccessToken != nil {
             instagramClient.getContent(username: instagramUsername,
-                success: { instagramMedias in
+                success: { instagramPosts in
                 },
                 failure: { error in
                 }

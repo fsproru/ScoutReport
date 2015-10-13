@@ -10,8 +10,9 @@ class InstagramClientTest: XCTestCase {
     }
 
     func testGetContent() {
-        let username = "flash"
-        Suspect.chooseStubbedSuspect(instagramAccessToken: "allGoood")
+        let username    = "flash"
+        let accessToken = "allGood"
+        Suspect.chooseStubbedSuspect(instagramAccessToken: accessToken)
         XCTAssertEqual(0, network.callsToGet.count)
 
         client.getContent(username: username,
@@ -19,10 +20,10 @@ class InstagramClientTest: XCTestCase {
             failure: { error in }
         )
 
-        let call          = network.callsToGet[0]
-        let requestString = call.arguments[0] as! String
+        let findUserCall          = network.callsToGet[0]
+        let findUserRequestString = findUserCall.arguments[0] as! String
 
         XCTAssertEqual(1, network.callsToGet.count)
-        XCTAssert(requestString.rangeOfString(username) != nil)
+        XCTAssertEqual(findUserRequestString, "https://api.instagram.com/v1/users/search?q=\(username)&access_token=\(accessToken)")
     }
 }
