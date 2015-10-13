@@ -1,10 +1,12 @@
 import XCTest
+import SwiftyJSON
 @testable import ScoutReport
 
 class InstagramUserTest: XCTestCase {
-    func testAttributes() {
-        let userID = 1
-        let user   = InstagramUser(id: userID)
-        XCTAssertEqual(userID, user.id)
+    func testAttributesFromJSON() {
+        let id   = 1
+        let json = JSON(["id": id])
+        let user = InstagramUser(json: json)
+        XCTAssertEqual(id, user!.id)
     }
 }
