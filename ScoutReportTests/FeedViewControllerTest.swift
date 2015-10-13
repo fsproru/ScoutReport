@@ -32,4 +32,12 @@ class FeedViewControllerTest: XCTestCase {
         controller.endAppearanceTransition()
         XCTAssertEqual(1, instagramClient.callsToGetContent.count)
     }
+
+    func testDisplayingInstagramPosts() {
+        let urlString = "http://s3.aws.amazon.com/my_fancy_picture.jpg"
+        let posts = [InstagramPost(imageURLString: urlString)]
+        controller.posts = posts
+        controller.loadViewIfNeeded()
+        XCTAssertEqual(1, controller.tableView(controller.tableView, numberOfRowsInSection: 0))
+    }
 }

@@ -10,4 +10,8 @@ struct InstagramPost {
             return nil
         }
     }
+
+    init(imageURLString: String) {
+        self.imageURLString = imageURLString
+    }
 }
